@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Uhai Océan — association pour la découverte, la recherche et la valorisation durable des algues marines dans l'océan Indien."
+    />
+    <title>Uhai Océan — Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.png" width="48" height="48" alt="Logo Uhai Océan" />
+          <span class="brand-text">UHAI <span>océan</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html" aria-current="page">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="algues.html">Les algues</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero" aria-labelledby="titre-accueil">
+        <div class="hero-inner">
+          <h1 id="titre-accueil">Science, coopération et algues marines</h1>
+          <p class="lead">
+            Uhai Océan rassemble celles et ceux qui veulent mieux comprendre et valoriser durablement
+            les ressources algales, de l’océan Indien au monde.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="a-propos.html">Découvrir l’association</a>
+            <a class="btn btn-secondary" href="contact.html">Nous contacter</a>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="titre-piliers">
+        <h2 id="titre-piliers" class="section-title">Nos engagements</h2>
+        <p class="section-intro">
+          Trois axes guident nos actions : explorer le vivant marin, produire des connaissances
+          solides et accompagner des usages responsables des algues.
+        </p>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Découverte</h3>
+            <p>
+              Sensibilisation et exploration des écosystèmes algaires, de la biodiversité aux enjeux
+              locaux dans la région de l’océan Indien.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Recherche</h3>
+            <p>
+              Appui à l’étude scientifique, au partage de données et aux collaborations entre
+              chercheurs, institutions et acteurs de terrain.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Valorisation durable</h3>
+            <p>
+              Promotion d’initiatives qui respectent les milieux et les communautés : alimentation,
+              santé, environnement et biotechnologies.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split" aria-labelledby="titre-science">
+        <div>
+          <h2 id="titre-science" class="section-title">De la mer au laboratoire</h2>
+          <div class="prose">
+            <p>
+              Notre association relie les savoirs naturalistes, les approches de laboratoire et les
+              besoins des territoires. Nous croyons que la coopération entre pairs — comme dans une
+              colonie d’algues — fait progresser la science et les projets utiles.
+            </p>
+          </div>
+          <p style="margin-top: 1rem">
+            <a class="btn btn-secondary" href="algues.html">En savoir plus sur les algues</a>
+          </p>
+        </div>
+        <img
+          src="assets/img/lab-algue.png"
+          alt="Schéma : algues marines, boîte de Pétri, fiole et microscope"
+          width="560"
+          height="420"
+          loading="lazy"
+        />
+      </section>
+
+      <section class="cta-band" aria-labelledby="titre-cta">
+        <h2 id="titre-cta">Rejoindre le réseau Uhai Océan</h2>
+        <p>Événements, projets et actualités : restons en contact.</p>
+        <a class="btn btn-primary" href="contact.html">Écrire à l’association</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" width="36" height="36" alt="" />
+          <span>Uhai Océan</span>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Uhai Océan. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

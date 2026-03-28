@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contacter l’association Uhai Océan." />
+    <title>Contact — Uhai Océan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.png" width="48" height="48" alt="Logo Uhai Océan" />
+          <span class="brand-text">UHAI <span>océan</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="algues.html">Les algues</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <header class="page-hero">
+        <h1>Contact</h1>
+        <p>
+          Une question sur l’association, un projet de collaboration ou une candidature pour rejoindre le
+          réseau ? Utilisez le formulaire ci-dessous ou écrivez-nous directement par courriel.
+        </p>
+      </header>
+
+      <div class="contact-layout">
+        <div>
+          <p class="prose" style="margin-top: 0; color: var(--text-muted)">
+            <strong>Courriel :</strong>
+            <a id="contact-email-link" href="mailto:contact@uhaiocean.org">contact@uhaiocean.org</a>
+          </p>
+          <p class="prose" style="color: var(--text-muted); font-size: 0.95rem">
+            Remplacez cette adresse par celle de l’association dans le fichier
+            <code style="color: var(--foam)">contact.html</code> (attribut
+            <code style="color: var(--foam)">href</code> du lien et champ caché du formulaire) lorsque
+            votre messagerie officielle sera définie.
+          </p>
+          <form class="contact-form" id="contact-form" action="#" method="get" novalidate>
+            <input type="hidden" name="mailto" id="mailto-addr" value="contact@uhaiocean.org" />
+            <label for="contact-name">Nom</label>
+            <input id="contact-name" name="name" type="text" autocomplete="name" required />
+
+            <label for="contact-email">Votre e-mail</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" required />
+
+            <label for="contact-subject">Sujet</label>
+            <input id="contact-subject" name="subject" type="text" required />
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Ouvrir ma messagerie</button>
+          </form>
+        </div>
+        <div class="card" style="padding: 1.5rem">
+          <h2 class="section-title" style="font-size: 1.2rem; margin-bottom: 0.75rem">Informations</h2>
+          <p style="margin: 0; color: var(--text-muted); font-size: 0.98rem">
+            Uhai Océan est une association engagée pour les algues marines et la coopération dans la
+            région de l’océan Indien. Les délais de réponse dépendent du volume de messages ; merci de
+            préciser l’objet de votre demande.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" width="36" height="36" alt="" />
+          <span>Uhai Océan</span>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Uhai Océan. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      (function () {
+        var form = document.getElementById("contact-form");
+        if (!form) return;
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var addrEl = document.getElementById("mailto-addr");
+          var addr = addrEl ? addrEl.value.trim() : "contact@uhaiocean.org";
+          var name = document.getElementById("contact-name").value.trim();
+          var from = document.getElementById("contact-email").value.trim();
+          var subject = document.getElementById("contact-subject").value.trim();
+          var message = document.getElementById("contact-message").value.trim();
+          var body =
+            message +
+            "\n\n---\n" +
+            "Nom : " +
+            name +
+            "\n" +
+            "E-mail : " +
+            from;
+          var url =
+            "mailto:" +
+            addr +
+            "?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(body);
+          window.location.href = url;
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Agenda et événements de l’association Uhai Océan." />
+    <title>Événements — Uhai Océan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.png" width="48" height="48" alt="Logo Uhai Océan" />
+          <span class="brand-text">UHAI <span>océan</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="algues.html">Les algues</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="evenements.html" aria-current="page">Événements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <header class="page-hero">
+        <h1>Événements</h1>
+        <p>
+          Conférences, ateliers, journées de terrain ou webinaires : cette page recensera les
+          rendez-vous de l’association. Revenez bientôt ou inscrivez-vous à notre liste de contact pour
+          être informé.
+        </p>
+      </header>
+
+      <div class="event-list" role="list">
+        <article role="listitem">
+          <p class="meta">À venir</p>
+          <h3>Prochains événements</h3>
+          <p>
+            Aucun événement n’est publié pour le moment. Les dates et lieux seront annoncés ici dès que
+            le programme sera fixé.
+          </p>
+        </article>
+      </div>
+
+      <section class="cta-band" style="margin-top: 2.5rem" aria-labelledby="titre-news">
+        <h2 id="titre-news">Ne rien manquer</h2>
+        <p>Écrivez-nous pour signaler votre intérêt ou proposer un partenariat autour d’un événement.</p>
+        <a class="btn btn-primary" href="contact.html">Contacter Uhai Océan</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" width="36" height="36" alt="" />
+          <span>Uhai Océan</span>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Uhai Océan. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

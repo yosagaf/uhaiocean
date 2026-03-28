@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Projets et initiatives soutenus ou portés par Uhai Océan." />
+    <title>Projets — Uhai Océan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.png" width="48" height="48" alt="Logo Uhai Océan" />
+          <span class="brand-text">UHAI <span>océan</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="algues.html">Les algues</a></li>
+            <li><a href="projets.html" aria-current="page">Projets</a></li>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <header class="page-hero">
+        <h1>Projets</h1>
+        <p>
+          Retrouvez ici les initiatives de l’association : cartographie des ressources, ateliers,
+          partenariats scientifiques et actions de sensibilisation. Cette page sera enrichie au fil des
+          actualités.
+        </p>
+      </header>
+
+      <div class="project-list" role="list">
+        <article role="listitem">
+          <p class="meta">En construction — contenu à venir</p>
+          <h3>Réseau de partage des connaissances</h3>
+          <p>
+            Mise en relation des membres, diffusion de ressources documentaires et organisation de
+            rencontres entre chercheurs, étudiants et acteurs de terrain autour des algues marines.
+          </p>
+        </article>
+        <article role="listitem">
+          <p class="meta">À définir</p>
+          <h3>Valorisation durable</h3>
+          <p>
+            Accompagnement de projets pilotes respectueux des écosystèmes et des usages locaux, dans
+            les filières alimentaires, environnementales ou biotechnologiques.
+          </p>
+        </article>
+        <article role="listitem">
+          <p class="meta">À définir</p>
+          <h3>Rayonnement océan Indien</h3>
+          <p>
+            Renforcement des collaborations régionales et internationales pour faire connaître les
+            enjeux algaires spécifiques à l’océan Indien.
+          </p>
+        </article>
+      </div>
+
+      <p class="prose" style="margin-top: 2rem; color: var(--text-muted)">
+        Vous portez un projet aligné avec nos objectifs ?
+        <a href="contact.html">Contactez-nous</a> pour en discuter.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" width="36" height="36" alt="" />
+          <span>Uhai Océan</span>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Uhai Océan. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

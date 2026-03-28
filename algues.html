@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Pourquoi les algues marines comptent : écologie, usages et recherche avec Uhai Océan."
+    />
+    <title>Les algues — Uhai Océan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.png" width="48" height="48" alt="Logo Uhai Océan" />
+          <span class="brand-text">UHAI <span>océan</span></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="algues.html" aria-current="page">Les algues</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <header class="page-hero">
+        <h1>À propos des algues</h1>
+        <p>
+          Les algues ne sont pas de simples plantes du bord de mer : ce sont des acteurs majeurs des
+          océans et des filières d’avenir lorsqu’on les comprend et qu’on les valorise avec méthode.
+        </p>
+      </header>
+
+      <section class="prose" style="max-width: 62ch" aria-labelledby="titre-eco">
+        <h2 id="titre-eco" class="section-title">Un pilier des océans</h2>
+        <p>
+          Les macroalgues et le phytoplancton produisent une part importante de l’oxygène que nous
+          respirons et structurent des habitats où se nourrissent et se reproduisent de nombreuses
+          espèces. Protéger ces milieux, c’est aussi préserver des chaînes alimentaires et des
+          communautés côtières.
+        </p>
+        <p>
+          À l’échelle microscopique, des organismes comme certaines colonies d’algues vertes rappellent
+          que le vivant marin repose souvent sur la <strong>coopération</strong> entre de très nombreux
+          individus — une métaphore naturelle pour une association fondée sur le réseau et le partage.
+        </p>
+      </section>
+
+      <section style="margin-top: 2.5rem" aria-labelledby="titre-usages">
+        <h2 id="titre-usages" class="section-title">Recherche et usages durables</h2>
+        <p class="section-intro">
+          La science étudie la composition, le cycle de vie et l’écologie des algues pour proposer des
+          usages responsables : matières premières, biomolécules d’intérêt, restauration côtière, et
+          bien d’autres pistes encore en exploration.
+        </p>
+        <div class="split" style="margin-bottom: 0">
+          <div class="prose">
+            <p>
+              Uhai Océan encourage les échanges entre naturalistes, laboratoires et porteurs de projets,
+              afin que l’innovation reste compatible avec la préservation des stocks, des écosystèmes et
+              des savoirs locaux.
+            </p>
+            <p>
+              <a href="projets.html">Voir les projets de l’association</a>
+            </p>
+          </div>
+          <img
+            src="assets/img/algue3.png"
+            alt="Microphotographie de colonies d’algues vertes sphériques (Volvox)"
+            width="520"
+            height="400"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section aria-labelledby="titre-galerie">
+        <h2 id="titre-galerie" class="section-title" style="margin-top: 3rem">Galerie</h2>
+        <p class="section-intro">Quelques images illustrant la diversité et la beauté du monde algal.</p>
+        <div class="gallery">
+          <figure>
+            <img src="assets/img/algue1.png" alt="Vue rapprochée d’algues marines" loading="lazy" />
+            <figcaption>Macroalgues — textures et couleurs</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/algue2.png" alt="Détail d’algues dans leur environnement" loading="lazy" />
+            <figcaption>Milieux naturels</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/algue3.png" alt="Colonies microscopiques d’algues vertes" loading="lazy" />
+            <figcaption>Observation au microscope</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" width="36" height="36" alt="" />
+          <span>Uhai Océan</span>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Uhai Océan. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

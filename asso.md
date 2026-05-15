@@ -22,7 +22,7 @@ Trésorier : Mme SOUNDJATA Youssouf
 Trésorier Adjoint : Mr Bouchrane Ibrahim
 Contrôleuse : Mme DJAIDAT Radjabou Ahmed
 Chargée de Recherche et développement : Mme ABDALLAH Zahara
-Conseiller scientifique : Dr ABACAR SOILIH Chakira 
+Conseiller scientifique : Dr ABACAR SOILIHI Chakira 
 ÉVENEMENTS	
 À PROPOS DES ALGUES
 PROJETS

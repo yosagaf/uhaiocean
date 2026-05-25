@@ -21,6 +21,7 @@ Secrétaire générale : Mr  BRAL Norbert
 Trésorier : Mme SOUNDJATA Youssouf 
 Contrôleuse : Mme DJAIDAT Radjabou Ahmed
 Chargée de Recherche et développement : Mme ABDALLAH Zahara
+Chargé de Recherche et développement : Mr HOUSNI Madjid Hassane
 Conseiller scientifique : Dr ABACAR SOILIHI Chakira 
 ÉVENEMENTS	
 À PROPOS DES ALGUES

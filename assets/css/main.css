@@ -385,7 +385,8 @@ main {
 }
 
 .video-showcase-inner {
-  max-width: min(920px, 100%);
+  /* Lecteur environ deux fois plus petit qu’avant (moitié de largeur max) */
+  max-width: min(460px, 100%);
   margin: 0 auto;
   padding: 0 clamp(1rem, 4vw, 1.75rem);
 }

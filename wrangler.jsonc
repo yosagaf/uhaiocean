@@ -6,6 +6,7 @@
     "enabled": true
   },
   "assets": {
+    // Répertoire = racine du site ; exclusions : `.assetsignore` (sinon `.git/` part en prod).
     "directory": "."
   },
   "compatibility_flags": [

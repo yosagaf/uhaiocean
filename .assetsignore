@@ -1,0 +1,10 @@
+# Patterns type .gitignore : exclus du bundle « Static Assets » lors de `wrangler deploy`
+# lorsque assets.directory est la racine du dépôt.
+# Référence : https://developers.cloudflare.com/workers/static-assets/binding/#ignoring-assets
+
+.git/
+.wrangler/
+node_modules/
+.dev.vars
+.env
+.env.*

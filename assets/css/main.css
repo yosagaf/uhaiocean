@@ -377,18 +377,107 @@ main {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
 
-/* Bloc vidéo d’accueil (responsive, léger jusqu’à lecture) */
+/* Bloc vidéo d’accueil : mise en deux colonnes (média + contenu) */
 .video-showcase {
   position: relative;
   z-index: 1;
   margin-bottom: 3rem;
 }
 
-.video-showcase-inner {
-  /* Lecteur environ deux fois plus petit qu’avant (moitié de largeur max) */
-  max-width: min(460px, 100%);
-  margin: 0 auto;
-  padding: 0 clamp(1rem, 4vw, 1.75rem);
+.video-split-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 38%) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: start;
+}
+
+.video-split-media {
+  position: relative;
+}
+
+@media (min-width: 801px) {
+  .video-split-media {
+    position: sticky;
+    top: calc(var(--header-h) + 1.25rem);
+  }
+}
+
+.video-split-content .section-intro {
+  margin-bottom: 1.25rem;
+}
+
+.video-split-heading {
+  margin: 0 0 0.65rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--wave-blue);
+}
+
+.video-split-list {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.video-split-list li {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.video-split-bullet {
+  flex-shrink: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-top: 0.45rem;
+  border-radius: 50%;
+  background: var(--seaweed);
+  box-shadow: 0 0 0 3px rgba(141, 167, 109, 0.2);
+}
+
+.video-split-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.video-split-footnote {
+  margin: 0;
+  font-size: 0.88rem;
+  color: rgba(242, 247, 251, 0.55);
+  max-width: 52ch;
+}
+
+.video-split-footnote a {
+  color: var(--wave-blue);
+}
+
+@media (max-width: 800px) {
+  .video-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-split-media {
+    order: 2;
+    max-width: min(340px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: auto;
+  }
+
+  .video-split-content {
+    order: 1;
+  }
 }
 
 .video-frame {

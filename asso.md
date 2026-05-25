@@ -20,7 +20,7 @@ Vice-Présidente : Mme KAIRI Youssouf
 Secrétaire générale : Mr  BRAL Norbert 
 Trésorier : Mme SOUNDJATA Youssouf 
 Contrôleuse : Mme DJAIDAT Radjabou Ahmed
-Chargé de Recherche et développement : Mr HOUSNI Madjid Hassane
+Chargée de Recherche et développement : Mme ABDALLAH Zahara
 Conseiller scientifique : Dr ABACAR SOILIHI Chakira 
 ÉVENEMENTS	
 À PROPOS DES ALGUES

@@ -19,9 +19,8 @@ Président : Dr DJOUNDI Radjabou Ahmed
 Vice-Présidente : Mme KAIRI Youssouf 
 Secrétaire générale : Mr  BRAL Norbert 
 Trésorier : Mme SOUNDJATA Youssouf 
-Trésorier Adjoint : Mr Bouchrane Ibrahim
 Contrôleuse : Mme DJAIDAT Radjabou Ahmed
-Chargée de Recherche et développement : Mme ABDALLAH Zahara
+Chargé de Recherche et développement : Mr HOUSNI Madjid Hassane
 Conseiller scientifique : Dr ABACAR SOILIHI Chakira 
 ÉVENEMENTS	
 À PROPOS DES ALGUES

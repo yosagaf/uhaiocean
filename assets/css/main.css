@@ -524,6 +524,36 @@ main {
   margin-bottom: 0;
 }
 
+.founder {
+  display: grid;
+  grid-template-columns: minmax(160px, 220px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+
+.founder img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius);
+  background: var(--ocean-mid);
+}
+
+@media (max-width: 700px) {
+  .founder {
+    grid-template-columns: 1fr;
+  }
+
+  .founder img {
+    max-width: 220px;
+    margin-inline: auto;
+  }
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

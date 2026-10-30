@@ -14,13 +14,16 @@ Uhai Océan s’attache à renforcer les liens et la coopération entre ses memb
 	
 ORGANES DIRECTEURS  
 
-Président : Dr DJOUNDI Radjabou Ahmed
+Président-fondateur : Dr DJOUNDI Radjabou Ahmed
+
+Docteur en chimie des produits naturels et spécialiste de la caractérisation biochimique des algues, Djoundi Radjabou Ahmed a consacré plusieurs années de recherche à l’étude des algues marines des Comores. Pionnier dans ce domaine, il contribue à révéler une biodiversité marine encore largement méconnue et sous-explorée.
+
+À travers UHAI Océan, il porte une ambition : mieux connaître, préserver et valoriser durablement les ressources marines des Comores, en créant des passerelles entre recherche scientifique, biodiversité et innovation.
 
 Vice-Présidente : Mme KAIRI Youssouf 
-Secrétaire générale : Mr  BRAL Norbert 
+Secrétaire générale : Mme ABDALLAH Zahara
 Trésorier : Mme SOUNDJATA Youssouf 
 Contrôleuse : Mme DJAIDAT Radjabou Ahmed
-Chargée de Recherche et développement : Mme ABDALLAH Zahara
 Chargé de Recherche et développement : Mr HOUSNI Madjid Hassane
 Conseiller scientifique : Dr ABACAR SOILIHI Chakira 
 ÉVENEMENTS	
